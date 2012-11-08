@@ -1,0 +1,1 @@
+A more minimal version of the application, with the primary aim of being under 10K of total space (not counting the images, which may be omitted or recreated in css with the remaining 2K). 

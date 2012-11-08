@@ -1,0 +1,133 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>GradeBook</title>
+	<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body onload="init()">
+	<div id = "Content">
+		<!--Insert Template Selection Here-->
+		
+	<div id = "Header">
+		<img src="Logo3.png" id ="Logo"></img>
+		<h3 id ="Title">GradeBook</h3>
+	</div>
+		
+		<div id = "Homework" class = "Category">
+			<div id = "CatHeader">
+			<h2>Homeworks</h2>
+			<input type="text" name="field" id="HomeworkPercentage" class = "Percentage" value ="10"/>
+			</div>
+							<hr>	
+			<ol id="HomeworkGrades">
+					<p onclick="addGradeField('Homework');" class = "CatNav"> Add Grades </p>
+			</ol>
+							<hr>
+			<h3 id="Total">Total:</h3>
+			<h2 id="HomeworkTotal" class = "Total">0/0</h2>
+		</div>
+		
+		<div id = "Quiz" class = "Category">
+			<div id = "CatHeader">
+			<h2>Quizes</h2>
+			<input type="text" name="field" id="QuizPercentage" class = "Percentage" value ="15"/>
+			</div>
+							<hr>
+			<ol id="QuizGrades">
+					<p onclick="addGradeField('Quiz');" class = "CatNav"> Add Grades </p>
+			</ol>
+							<hr>
+			<h3 id="Total">Total:</h3>
+			<h2 id="QuizTotal" class = "Total">0/0</h2>
+		</div>
+		
+		<div id = "Test" class = "Category">
+			<div id = "CatHeader">
+			<h2>Tests</h2>
+			<input type="text" name="field" id="TestPercentage" class = "Percentage" value ="25"/>
+			</div>
+							<hr>
+			<ol id="TestGrades">
+					<p onclick="addGradeField('Test');" class = "CatNav"> Add Grades </p>
+			</ol>
+							<hr>
+			<h3 id="Total">Total:</h3>
+			<h2 id="TestTotal" class = "Total">0/0</h2>
+		</div>
+		
+		<div id = "Project" class = "Category">
+			<div id = "CatHeader">
+			<h2>Projects</h2>
+			<input type="text" name="field" id="ProjectPercentage" class = "Percentage" value ="20"/>
+			</div>
+							<hr>
+			<ol id="ProjectGrades">
+					<p onclick="addGradeField('Project');" class = "CatNav"> Add Grades </p>
+			</ol>
+							<hr>
+			<h3 id="Total">Total:</h3>
+			<h2 id="ProjectTotal" class = "Total">0/0</h2>
+		</div>
+		
+		<div id = "Other" class = "Category">
+			<div id = "CatHeader">
+			<h2>Other</h2>
+			<input type="text" name="field" id="OtherPercentage" class = "Percentage" value ="5"/>
+			</div>
+							<hr>
+			<ol id="OtherGrades">
+					<p onclick="addGradeField('Other');" class = "CatNav"> Add Grades </p>
+			</ol>
+							<hr>
+			<h3 id="Total">Total:</h3>
+			<h2 id="OtherTotal" class = "Total">0/0</h2>
+		</div>		
+		
+		<div id = "Final" class = "Category">
+			<div id = "CatHeader">
+			<h2>Final Exam</h2>
+			<input type="text" name="field" id="FinalPercentage" class = "Percentage" value ="25"/>
+			</div>
+			<ol id="FinalGrades">			
+				<input type = "checkbox" id ="FinalGradeMarker1" class = "ActiveMarker" checked="True">
+				<input type="text" id="FinalGradeValue1" value = "100"/>
+			</ol>
+			
+			<h3 id="Total">Total:</h3>
+			<h2 id="FinalTotal" class = "Total">0/0</h2>
+		</div>			
+		
+		<div id="Summary">
+			<h2 class="CategoryName" id="HomeworkSummary">Homeworks</h2>	<!-- todo: show  ( 0.0% ) -->
+			<h2 class="CategoryTotal" id="HomeworkTotalSummary">0</h2>
+			
+			<h2 class="CategoryName" id="QuizSummary">Quizes</h2>
+			<h2 class="CategoryTotal" id="QuizTotalSummary">0</h2>
+
+			<h2 class="CategoryName" id="TestSummary">Tests</h2>
+			<h2 class="CategoryTotal" id="TestTotalSummary">0</h2>
+
+			<h2 class="CategoryName" id="ProjectSummary">Projects</h2>
+			<h2 class="CategoryTotal" id="ProjectTotalSummary">0</h2>
+
+			<h2 class="CategoryName" id="OtherSummary">Other</h2>
+			<h2 class="CategoryTotal" id="OtherTotalSummary">0</h2>
+
+			<h2 class="CategoryName" id="FinalSummary">Final Exam</h2>
+			<h2 class="CategoryTotal" id="FinalTotalSummary">0</h2>
+			
+			<hr>
+			<!-- Possible name conflict bug if, for the future custom categories, someone names a category "Total". 
+			For now, this works... -->
+			<h2 class="CategoryName" id="TotalSummary">Total</h2>		<!-- Todo: show total percentage -->
+			<h2 class ="CategoryTotal" id ="TotalTotalSummary">0</h2>
+		</div>
+	</div>
+
+
+	</body>
+	
+	
+
+</html>
