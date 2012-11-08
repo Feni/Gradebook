@@ -35,7 +35,7 @@ function calculateTotal()
 	var otherGrade = calculateGrade("Other") * parseFloat(document.getElementById("OtherPercentage").value)/100.0;
 	var finalGrade = calculateGrade("Final") * parseFloat(document.getElementById("FinalPercentage").value)/100.0;
 	
-	var total = ( homeworkGrade + quizGrade + testGrade + projectGrade ) * 100.0;
+	var total = ( homeworkGrade + quizGrade + testGrade + projectGrade + otherGrade + finalGrade ) * 100.0;
 	
 	document.getElementById("TotalTotalSummary").innerHTML = total;
 }
