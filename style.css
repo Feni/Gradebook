@@ -1,8 +1,52 @@
 body{
 	background-color:#333333; 
 	/* background-color:#EFF1F1; */
+	 
+
 	padding:0px 0px 0px 0px;
 	font: normal 1em/1.5 Georgia, serif;
+}
+
+
+#Content
+{	
+	padding-top:150px;
+	background-color:#8b6840;
+	 background-image:url("recycled-paper-texture.jpg");
+	border: 2px solid gray; 
+	padding-bottom:102px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;	
+	
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+}
+
+
+#Title
+{
+	font:normal Sans, Comics;
+	text-align:center;
+	color:white;
+}
+
+#Header
+{
+	background-color:#333333;
+	border-width:0px;
+	width:450px;
+	height:60px;
+	position:absolute;
+	display:inline-block;
+	left:0px;
+	top:70px;
+}
+
+#Logo
+{
+	position:absolute;
+	left:15px;
+	top:-25px;
 }
 
 .ActiveMarker
@@ -25,20 +69,7 @@ body{
 	opacity:1;
 }
 
-#Content
-{	
-	padding-top:70px;
-	background-color:#FFFFFF;
-	border: 2px solid gray; 
-	padding-bottom:102px;
-/*	-moz-border-radius:8px;
-	-webkit-border-radius:8px;	*/
-	
-	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
-}
-
-#Category
+.Category
 {
 	display: block;
 	width:800px;
@@ -46,12 +77,39 @@ body{
 	background:white;
 	margin-left: auto;
    	margin-right: auto;
+   	
+   	margin-top:30px;
+   	margin-bottom:30px;
+   	
 	border: 1px solid gray; 
 	padding:10px 20px 10px 20px;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+}
+
+#Summary
+{
+	display: block;
+	width:800px;
+	min-height:75px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	margin-bottom:80px;
+}
+
+.CategoryName
+{
+	display:block;
+}
+.CategoryTotal
+{
+	display:block;
+	text-align:right;
+	color:black;
+	clear:right;
 }
 
 #Logo
@@ -101,19 +159,23 @@ body{
 	border: 1px solid #aaaaaa;
 }
 
-#HomeworkTotal
-{
-	color:black;
-	font-size:32px;
-	padding:0 0 0 0;
-}
-
 .GradeValue
 {
 	float:right;
 	width:40px;
 	padding:2 2 2 2;
 	border:0px solid #ffffff;
+}
+
+#FinalGradeValue1
+{
+	display:block;
+	width:50px;
+	height:50px;
+	
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
 }
 
 .GradeName
@@ -161,4 +223,12 @@ hr{
 	text-align:right;
 	font-size:16px;
 	display:inline;
+}
+
+
+.Total
+{
+	color:black;
+	font-size:32px;
+	padding:0 0 0 0;
 }
