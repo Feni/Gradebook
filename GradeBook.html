@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>GradeBook</title>
+	<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body onload="init()">
+	<div id = "Header">
+		<img src = "Logo2.png" id = "Logo"></img>
+	</div>
+	<div id = "Content">
+		<!--Insert Template Selection Here-->
+		
+		<div id = "Category">
+			<div id = "CatHeader">
+			<h2>Homeworks</h2>
+			<input type="text" name="field" id="HomeworkPercentage" class = "Percentage" value ="10"/>
+			</div>
+							<hr>
+							
+		<!-- --------------------------------------------------------------------- -->
+			<ol id="HomeworkGrades">
+					<p onclick="addGradeField('Homework');" class = "CatNav"> Add Grades </p>
+			</ol>
+			
+		<!-- Option here to drop lowest ___ grades -->
+		
+							<hr>
+			<h3 id="Total">Total:</h3>
+			<h2 id="HomeworkTotal">0/0</h2>
+			
+		</div>
+		
+	</div>
+
+
+	</body>
+	
+	
+
+</html>
