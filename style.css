@@ -92,8 +92,9 @@ body{
 #Summary
 {
 	display: block;
-	width:800px;
+	width:900px;
 	min-height:75px;
+	background: white;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:30px;
@@ -161,6 +162,7 @@ body{
 
 .GradeValue
 {
+
 	float:right;
 	width:40px;
 	padding:2 2 2 2;
@@ -219,6 +221,7 @@ hr{
 }
 
 #Total {
+
 	color:#ff6600;
 	text-align:right;
 	font-size:16px;

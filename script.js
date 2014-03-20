@@ -35,7 +35,7 @@ function calculateTotal()
 	var otherGrade = calculateGrade("Other") * parseFloat(document.getElementById("OtherPercentage").value)/100.0;
 	var finalGrade = calculateGrade("Final") * parseFloat(document.getElementById("FinalPercentage").value)/100.0;
 	
-	var total = ( homeworkGrade + quizGrade + testGrade + projectGrade + otherGrade + finalGrade ) * 100.0;
+	var total = (homeworkGrade + quizGrade + testGrade + projectGrade + otherGrade + finalGrade)*100;
 	
 	document.getElementById("TotalTotalSummary").innerHTML = total;
 }
@@ -43,24 +43,29 @@ function calculateTotal()
 function calculateGrade(category)
 {
 	// Todo: add grade/total field, instead of assuming it's out of 100...
-//	var gradeValue = document.getElementById('myText');
-//	myTextField.value != ""
+	//	var gradeValue = document.getElementById('myText');
+	//	myTextField.value != ""
 
 	var i = 1;
 
         var gradeValue = document.getElementById(category+"GradeValue"+i);
         
         var grade = 0;
+        var currentGrade = 0;
         var total = 0;
+        var counter = 0.0;
         
        	while( gradeValue != null){
        		// Do stuff with the grade value. 
        		
        		var activeCheck = document.getElementById(category+"GradeMarker"+i);
-       		if(activeCheck.checked){		// Check if we shoudl include that grade in...
-	       		grade+=parseFloat(gradeValue.value);	// Note: Do parseInt here instead?
-	       		total+=100;
+       		if(activeCheck.checked){		// Check if we should include that grade in...
+	       		currentGrade+=parseFloat(gradeValue.value);	
+       			counter += 1.0;
+       			grade = currentGrade / counter;
+       			total = 100;
        		}
+
        		i++;
        		gradeValue = document.getElementById(category+"GradeValue"+i);
 	}

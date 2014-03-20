@@ -1,5 +1,13 @@
 Gradebook is a beautiful web application for calculating your grades based on weighted categories. 
 
 See http://feni.github.com/Gradebook/
+for creator.
 
 - Feni Varughese, August 2010
+
+Modifications I have made include giving the summary at the bottom of the html file a white
+background in order to increase readability. I have also made all grades out of 100. For example,
+instead of allowing homework grades to be 200/200 or 150/200, I have now averaged grades per category
+to keep them in the 100 point bound.
+
+- Kevin Nguyen, March 2014
